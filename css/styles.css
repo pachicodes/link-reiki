@@ -1,0 +1,325 @@
+:root {
+  --bg-main: #f8f5ee;
+  --color-primary: #123b32;
+  --color-primary-hover: #0e2f28;
+  --color-accent: #c8a96a;
+  --color-subtitle: #6f8f63;
+  --color-text-light: #ffffff;
+  --color-divider: rgba(200, 169, 106, 0.4);
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --max-width: 420px;
+  --radius-button: 12px;
+  --radius-profile: 50%;
+  --shadow-soft: 0 4px 20px rgba(18, 59, 50, 0.08);
+  --shadow-hover: 0 6px 24px rgba(18, 59, 50, 0.14);
+  --transition: 200ms ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--bg-main);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100dvh;
+  padding: 32px 24px 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero / Profile */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.profile-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-profile);
+  object-fit: cover;
+  border: 2px solid var(--color-accent);
+  box-shadow: var(--shadow-soft);
+  display: block;
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.site-subtitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 3vw, 1.125rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-subtitle);
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+.divider {
+  width: 48px;
+  height: 1px;
+  background-color: var(--color-accent);
+  margin: 20px auto 0;
+  position: relative;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+/* Links */
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  padding: 16px 24px;
+  border-radius: var(--radius-button);
+  border: 1.5px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.link-button:hover,
+.link-button:focus-visible {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hover);
+  outline: none;
+}
+
+.link-button:active {
+  transform: translateY(0);
+}
+
+.link-button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border-color: var(--color-primary);
+  min-height: 56px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+}
+
+.link-button--primary:hover,
+.link-button--primary:focus-visible {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.link-icon {
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* FAQ */
+
+.faq-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.faq-heading {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-button);
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.faq-question {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 14px 18px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: background-color var(--transition);
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: "+";
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.faq-item[open] .faq-question {
+  background-color: rgba(200, 169, 106, 0.1);
+}
+
+.faq-item[open] .faq-question::after {
+  content: "−";
+}
+
+.faq-answer {
+  font-size: 0.9375rem;
+  color: var(--color-primary);
+  opacity: 0.85;
+  padding: 0 18px 16px;
+  line-height: 1.65;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-divider);
+}
+
+.footer-text {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  color: var(--color-subtitle);
+  line-height: 1.7;
+}
+
+.footer-text + .footer-text {
+  margin-top: 4px;
+}
+
+.footer-location {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 12px;
+  letter-spacing: 0.04em;
+}
+
+/* Responsive */
+
+@media (min-width: 481px) {
+  .page {
+    padding: 48px 24px 56px;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero {
+    margin-bottom: 36px;
+  }
+
+  .links {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 64px 24px 72px;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
