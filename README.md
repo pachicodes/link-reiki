@@ -30,7 +30,7 @@ const SITE_CONFIG = {
     sobre: "#",                      // ← URL sobre o estúdio
     maps: "https://maps.google.com/?q=Barra+Bonita,SP",
   },
-  sessionDuration: "Sessões de aproximadamente 60 minutos",
+  sessionDuration: "Sessões de aproximadamente 30 minutos",
   faq: [ /* perguntas e respostas */ ],
 };
 ```

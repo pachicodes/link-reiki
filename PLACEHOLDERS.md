@@ -26,20 +26,6 @@ Checklist de tudo que está provisório no site e precisa ser substituído pela 
   - **Onde editar:** [`js/config.js`](js/config.js) → `whatsappMessage`
   - **Versão oficial:** Texto de boas-vindas alinhado ao tom do estúdio
 
-- [ ] **Link "Conheça a Experiência Reiki"**
-  - **Atual:** `#` (não leva a lugar nenhum)
-  - **Onde editar:** [`js/config.js`](js/config.js) → `links.experiencia`
-  - **Versão oficial:** URL de página, Notion, PDF ou site descrevendo a experiência
-
-- [ ] **Link "Sobre o Estúdio & Filosofia"**
-  - **Atual:** `#` (não leva a lugar nenhum)
-  - **Onde editar:** [`js/config.js`](js/config.js) → `links.sobre`
-  - **Versão oficial:** URL da página institucional / sobre o estúdio
-
-- [ ] **Instagram**
-  - **Atual:** `https://instagram.com/reikibarrabonita` (handle informado, não confirmado)
-  - **Onde editar:** [`js/config.js`](js/config.js) → `instagram`
-  - **Versão oficial:** Confirmar handle correto e URL ativa
 
 - [x] **Localização (Google Maps)**
   - **Atual:** `Rua Claudio Lopes, 205 - Jardim Vista Alegre, Barra Bonita / SP`
@@ -56,7 +42,7 @@ Checklist de tudo que está provisório no site e precisa ser substituído pela 
   - **Versão oficial:** Conteúdo escrito pelo estúdio, com informações reais (valores, política de cancelamento, etc.)
 
 - [ ] **Duração da sessão (rodapé)**
-  - **Atual:** `"Sessões de aproximadamente 60 minutos"` (estimativa)
+  - **Atual:** `"Sessões de aproximadamente 30 minutos"` (estimativa)
   - **Onde editar:** [`js/config.js`](js/config.js) → `sessionDuration`
   - **Versão oficial:** Duração real confirmada
 

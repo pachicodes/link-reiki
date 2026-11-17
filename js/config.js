@@ -8,7 +8,7 @@ const SITE_CONFIG = {
     maps: "https://maps.google.com/?q=Rua+Claudio+Lopes,+205+-+Jardim+Vista+Alegre,+Barra+Bonita,+SP",
   },
   address: "Rua Claudio Lopes, 205 - Jardim Vista Alegre, Barra Bonita / SP",
-  sessionDuration: "Sessões de aproximadamente 60 minutos",
+  sessionDuration: "Sessões de aproximadamente 30 minutos",
   faq: [
     {
       question: "O que é Reiki?",
