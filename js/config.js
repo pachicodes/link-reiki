@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  whatsapp: "55XXXXXXXXXXX",
+  whatsapp: "5514920045160",
   whatsappMessage: "Olá! Gostaria de agendar uma sessão de Reiki.",
   instagram: "https://instagram.com/reikibarrabonita",
   links: {

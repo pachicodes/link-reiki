@@ -2,7 +2,7 @@
 
 Checklist de tudo que está provisório no site e precisa ser substituído pela versão oficial.
 
-**Última revisão:** 2026-08-01
+**Última revisão:** 2026-11-17
 
 ---
 
@@ -16,10 +16,10 @@ Checklist de tudo que está provisório no site e precisa ser substituído pela 
 
 ## Links e contato
 
-- [ ] **Número do WhatsApp**
-  - **Atual:** `55XXXXXXXXXXX` (placeholder)
+- [x] **Número do WhatsApp**
+  - **Atual:** `5514920045160`
   - **Onde editar:** [`js/config.js`](js/config.js) → `whatsapp`
-  - **Versão oficial:** Número real com DDD (ex.: `5514999999999`, sem espaços ou símbolos)
+  - **Versão oficial:** `+55 14 92004-5160`
 
 - [ ] **Mensagem pré-preenchida do WhatsApp**
   - **Atual:** `"Olá! Gostaria de agendar uma sessão de Reiki."`
@@ -90,6 +90,6 @@ Checklist de tudo que está provisório no site e precisa ser substituído pela 
 
 | Total de itens | Concluídos | Pendentes |
 |----------------|------------|-----------|
-| 11             | 0          | 11        |
+| 11             | 1          | 10        |
 
 Quando todos os itens estiverem marcados, o site estará com conteúdo oficial completo.

@@ -22,7 +22,7 @@ Todos os links e textos configuráveis estão em [`js/config.js`](js/config.js):
 
 ```javascript
 const SITE_CONFIG = {
-  whatsapp: "55XXXXXXXXXXX",       // ← seu número aqui
+  whatsapp: "5514920045160",       // WhatsApp oficial
   whatsappMessage: "...",
   instagram: "https://instagram.com/reikibarrabonita",
   links: {
