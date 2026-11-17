@@ -26,8 +26,6 @@ const SITE_CONFIG = {
   whatsappMessage: "...",
   instagram: "https://instagram.com/reikibarrabonita",
   links: {
-    experiencia: "#",                // ← URL da experiência Reiki
-    sobre: "#",                      // ← URL sobre o estúdio
     maps: "https://maps.google.com/?q=Barra+Bonita,SP",
   },
   sessionDuration: "Sessões de aproximadamente 30 minutos",

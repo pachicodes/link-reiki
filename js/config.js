@@ -3,8 +3,6 @@ const SITE_CONFIG = {
   whatsappMessage: "Olá! Gostaria de agendar uma sessão de Reiki.",
   instagram: "https://instagram.com/reikibarrabonita",
   links: {
-    experiencia: "#",
-    sobre: "#",
     maps: "https://maps.google.com/?q=Rua+Claudio+Lopes,+205+-+Jardim+Vista+Alegre,+Barra+Bonita,+SP",
   },
   address: "Rua Claudio Lopes, 205 - Jardim Vista Alegre, Barra Bonita / SP",
@@ -50,8 +48,6 @@ function applyConfig() {
   }
 
   const linkMap = {
-    experiencia: SITE_CONFIG.links.experiencia,
-    sobre: SITE_CONFIG.links.sobre,
     instagram: SITE_CONFIG.instagram,
     maps: SITE_CONFIG.links.maps,
   };
