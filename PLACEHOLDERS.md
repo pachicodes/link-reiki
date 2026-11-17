@@ -41,10 +41,10 @@ Checklist de tudo que está provisório no site e precisa ser substituído pela 
   - **Onde editar:** [`js/config.js`](js/config.js) → `instagram`
   - **Versão oficial:** Confirmar handle correto e URL ativa
 
-- [ ] **Localização (Google Maps)**
-  - **Atual:** Busca genérica `Barra Bonita, SP`
+- [x] **Localização (Google Maps)**
+  - **Atual:** `Rua Claudio Lopes, 205 - Jardim Vista Alegre, Barra Bonita / SP`
   - **Onde editar:** [`js/config.js`](js/config.js) → `links.maps`
-  - **Versão oficial:** Link do pin exato do endereço do estúdio
+  - **Versão oficial:** Endereço informado pelo estúdio
 
 ---
 
@@ -90,6 +90,6 @@ Checklist de tudo que está provisório no site e precisa ser substituído pela 
 
 | Total de itens | Concluídos | Pendentes |
 |----------------|------------|-----------|
-| 11             | 1          | 10        |
+| 11             | 2          | 9         |
 
 Quando todos os itens estiverem marcados, o site estará com conteúdo oficial completo.

@@ -5,8 +5,9 @@ const SITE_CONFIG = {
   links: {
     experiencia: "#",
     sobre: "#",
-    maps: "https://maps.google.com/?q=Barra+Bonita,SP",
+    maps: "https://maps.google.com/?q=Rua+Claudio+Lopes,+205+-+Jardim+Vista+Alegre,+Barra+Bonita,+SP",
   },
+  address: "Rua Claudio Lopes, 205 - Jardim Vista Alegre, Barra Bonita / SP",
   sessionDuration: "Sessões de aproximadamente 60 minutos",
   faq: [
     {
@@ -63,6 +64,11 @@ function applyConfig() {
   const sessionDuration = document.querySelector("[data-session-duration]");
   if (sessionDuration) {
     sessionDuration.textContent = SITE_CONFIG.sessionDuration;
+  }
+
+  const address = document.querySelector("[data-address]");
+  if (address) {
+    address.textContent = SITE_CONFIG.address;
   }
 
   const faqContainer = document.querySelector("[data-faq-container]");
